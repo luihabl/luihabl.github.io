@@ -1,15 +1,43 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700');
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 /**
  * Style variables
  */
-$base-font-family:     'Source Code Pro', monospace !default;
-$base-font-size:       12.5px !default;
+$base-font-family:     'Roboto', sans-serif !default;
+$base-font-size:       16.0px !default;
 $mobile-font-size:     12px !default;
 $base-line-height:     1.5 !default;
 $container-width:      90% !default;
 $container-max-width:  600px !default;
+
+
+/**
+ * Emojis
+ */
+img.emojione {
+  // Override any img styles to ensure Emojis are displayed inline
+  margin: 0px !important;
+  display: inline !important;
+
+  height: auto;
+  width: 50px;
+}
+
+p#wrong-test {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: inline-block;
+}
+
+span.emoji {
+  font-size: 20px;
+  vertical-align: middle;
+  line-height: 0;
+}
+
 
 /**
  * Global
