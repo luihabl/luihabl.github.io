@@ -13,6 +13,38 @@ $base-line-height:     1.5 !default;
 $container-width:      90% !default;
 $container-max-width:  600px !default;
 
+.wrapper {
+    max-width: 1100px; 
+    margin: auto;
+    overflow:auto;
+}
+
+@media (max-width: 1100px) {
+    .sidenav {
+        display: none;
+    }
+}
+
+.sidenav {
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 70px;
+    z-index: 2;
+    width: 200px;
+    padding: 5px;
+    background: #F2F2F2;
+}
+
+.sidenav h1 {
+    font-size:15px;
+    margin: 1px;
+}
+
+.sidenav p {
+    font-size:13px;
+}
+
+
 
 /**
  * Emojis
@@ -75,9 +107,9 @@ footer { margin-bottom: 20px; }
 /**
  * Lists
  */
-:not(.menu) > ul { list-style: none;  padding-left: 0; }
-:not(.menu) > ul { list-style-type: none; }
-:not(.menu) > ul > li:before { content: "-";  margin-right: 9px; }
+/* :not(.menu) > ul { list-style: none;  padding-left: 0; } */
+/* :not(.menu) > ul { list-style-type: none; } */
+/* :not(.menu) > ul > li:before { content: "-";  margin-right: 9px; } */
 
 /**
  * Header/Navigation
