@@ -55,3 +55,6 @@ def gaussian(x):
     return np.exp(-x**2)
 ```
     
+and this is inline: `def g(x)`.
+
+You can use the plugin `themes` to upgrade your page. You can find this plugin in `/assets/etc/plugins`, and there you can find a python script called `themes.py`. If you execute this script with `ipython -i <script>.py` it will generate a bunch of `css` files that you can append on your project.

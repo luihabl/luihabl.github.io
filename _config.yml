@@ -12,3 +12,6 @@ include:
 
 exclude:
   - .sass-cache
+
+markdown: kramdown
+highlighter: rouge
