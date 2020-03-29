@@ -35,3 +35,31 @@
     padding:10px;
     margin-bottom: 15px;
 }
+
+.svg-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    fill: $dark;
+    padding: 0px 0px 0px 0px;
+    vertical-align: text-bottom;
+    
+  }
+
+  .post-date {
+    font-size: small;
+  }
+  
+  .post-date.index {
+    margin-bottom: 0px;
+  }
+
+  .post-excerpt {
+      display: inline;
+      white-space: nowrap;
+  }
+
+  .side-text {
+      text-align: left;
+      display: inline-block;
+  }

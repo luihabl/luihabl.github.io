@@ -3,28 +3,25 @@ layout: home
 ---
 
 <div class="row">
+  {% include sidebar.html %}
   <div class="col-md-8 mb-5">
-    <h3>Posts</h3>
-    <hr />
-    
-    
-    
-    <ul>
-      {%- for post in site.posts -%}
-      <li>
-        <span>{{ post.date | date: date_format }}</span>
-        <h3>
-          <a href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-      </li>
+
+    <h4>Posts</h4>
+    <hr/>
+    {%- for post in site.posts -%}
+        <p class="h5"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></p>
+        <p class="text-muted post-date index">Posted {{ post.date | date: "%d/%m/%Y" }}</p>
+        <p class="post-excerpt">{{ post.excerpt | truncatewords: 30}}</p>
+
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
       {%- endfor -%}
-    </ul>
+
     
+      
     
-    
-    <p>   
+    <!-- <p>   
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque
       tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel,
       porro, soluta unde debitis aliquam laboriosam. Repellat explicabo,
@@ -35,11 +32,13 @@ layout: home
       neque consectetur consequatur magni in nisi, natus beatae quidem quam odit
       commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.
     </p>
-    <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
+
+
+    <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a> -->
     
 
   
   </div>
-  {% include sidebar.html %}
+  
 </div>
 
