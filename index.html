@@ -1,0 +1,45 @@
+---
+layout: home
+---
+
+<div class="row">
+  <div class="col-md-8 mb-5">
+    <h3>Posts</h3>
+    <hr />
+    
+    
+    
+    <ul>
+      {%- for post in site.posts -%}
+      <li>
+        <span>{{ post.date | date: date_format }}</span>
+        <h3>
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+      </li>
+      {%- endfor -%}
+    </ul>
+    
+    
+    
+    <p>   
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque
+      tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel,
+      porro, soluta unde debitis aliquam laboriosam. Repellat explicabo,
+      maiores!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio
+      neque consectetur consequatur magni in nisi, natus beatae quidem quam odit
+      commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.
+    </p>
+    <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
+    
+
+  
+  </div>
+  {% include sidebar.html %}
+</div>
+

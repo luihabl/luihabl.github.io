@@ -1,27 +1,22 @@
+---
+---
+
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="en">
+{% include head.html %}
 
-  {%- include head.html -%}
+<body>
+  {% include navigation.html %} 
+  <!-- Page Content -->
+  <div class="container mb-5">
+    {{ content }}
+  </div>
+  <!-- /.container -->
+  {% include footer.html %}
 
-  <body>
+  <!-- Bootstrap core JavaScript -->
+  <script src="{{ site.baseurl }}/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
 
-    <div class="wrapper">
-    
-   <div class="sidenav">
-    <h1>Lui Habl<h1/>
-    <p>PhD student in Plasma Physics at the <a href="https://www.lpp.polytechnique.fr/">Laboratoire de Physique des Plasmas</a> in Paris, France.</p>
-   </div>
-
-    <div class="container">
-      {%- include header.html -%}
-
-    <main>
-      {{ content }}
-    </main>
-
-    {%- include footer.html -%}
-
-    </div>
-    </div>
-  </body>
 </html>

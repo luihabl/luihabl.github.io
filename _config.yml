@@ -1,24 +1,15 @@
-# Example Site settings
+title: Lui Habl
+description: This is a personal page to write down my thoughts.
 
-#google_analytics: UA-NNNNNNNN-N
+baseurl: ""
+color-scheme: "#007bff" # the scheme can be any HEX code like "#00aa55"
 
-#header_pages:
-#  - index.md
-#  - about.md
+sass:
+  sass_dir: /assets/css/_sass
+  style: compressed
 
-#footer: 'follow us on <a href="https://twitter.com/">twitter</a>'
+include:
+  - _pages
 
-
-name: "Lui"
-description: "My page"
-
-header_pages:
-  - index.md
-  - about.md
-
-style: light # dark (default) or light
-#listen_for_clients_preferred_style: true # true or false (default)
-
-plugins:
-  - jekyll-seo-tag
-  
+exclude:
+  - .sass-cache
