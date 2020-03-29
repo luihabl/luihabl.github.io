@@ -5,8 +5,7 @@ baseurl: ""
 color-scheme: "#007bff" # the scheme can be any HEX code like "#00aa55"
 
 sass:
-  sass_dir: /assets/css/_sass
-  style: compressed
+  sass_dir: ./assets/css/_sass
 
 include:
   - _pages
