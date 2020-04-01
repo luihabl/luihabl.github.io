@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: /contact/
+permalink: 
 ---
 
 ## Contact us
