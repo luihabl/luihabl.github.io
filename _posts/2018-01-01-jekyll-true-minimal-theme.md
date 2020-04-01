@@ -4,7 +4,7 @@ title:  "Jekyll true minimal theme"
 date:   2018-01-01 23:22:40 +0300
 ---
 
-True minimal theme is extremely lightweight and ascetic jekyll theme.<!--more-->
+True minimal theme is extremely lightweight and ascetic jekyll theme.
 
 This theme has only one css file, which is used for source code highlighting. 
 
@@ -69,7 +69,7 @@ ___
 ***
 
 
-## Typographic replacements
+ ## Typographic replacements
 
 Enable typographer option to see result.
 
@@ -284,4 +284,4 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 
 ::: warning
 *here be dragons*
-:::
+::: 

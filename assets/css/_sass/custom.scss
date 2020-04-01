@@ -105,22 +105,22 @@ table {
 
 
 blockquote {
-    color: black;
+    color: $gray-600;
     background-color: #fffcee;
     border-left: 4px solid #ffed9b;
     padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     // @include relative-font-size(1.125);
-    font-style: italic;
-    font-weight: 300;
+    // font-style: none;
+    // font-weight: 400;
     border-radius:3px;
     
     > :last-child {
         margin-bottom: 0;
     }
-    
-    i, em {
-        font-style: normal;
-    }
+  
     }
   
 .toc {
@@ -132,7 +132,6 @@ blockquote {
   border: 1px solid $gray-300;
   padding-left: 15px;
   padding-top: 10px;
-  margin-top: 40px;
 
   ul {
     padding: 0;

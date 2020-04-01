@@ -7,33 +7,41 @@ layout: default
 
 <div class="row">
 
-    <div class="col-md-1x">
+    <div class="col print-side">
         
     </div>
 
     
-                
-
-    <div class="col-md-8 mb-5">
+    <div class="col-lg-8 mb-5">
   
     <h1>{{ page.title }}</h1>
     <p class="text-muted post-date post">{{ page.date | date: "%d/%m/%Y" }}</p>
     {{ content }}
     </div>
 
-    <div class="d-none d-md-block mt-2  col fixed-sidebar">
-
-    <div class="toc">
+    <div class="d-none d-lg-block col mt-4 fixed-sidebar print-side">
         {% if toc.size > 1 %}
-        <h4>Contents</h4>
-          
+        <div class="d-print-none toc"> 
+        <h4>Contents</h4>  
         {{ toc }}
         
-        {% endif %}
+            </div>
+            {% endif %}
+        
     </div>
 
+    <!-- <div class="d-none d-sm-block mt-4  col fixed-sidebar">
+    
+    
+    <div class="toc"> 
+        {% if toc.size > 1 %}
+        <h4>Contents</h4>  
+        {{ toc }}
+        {% endif %}
+        </div>
 
-    </div> 
+
+    </div>  -->
 
     
   </div>
