@@ -171,8 +171,14 @@ blockquote {
 }
 
 .fixed-sidebar-img {
-  -ms-flex: 0 0 100px;
-  flex: 0 0 100px;
+  -ms-flex: 0 0 125px;
+  flex: 0 0 130px;
+}
+
+.personal-img{
+  border-radius: 8px;
+  width:125px; 
+  height:125px;
 }
 
 span.emoji {
@@ -228,3 +234,5 @@ $maxw: 800px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+span.avoidwrap { display:inline-block; }
