@@ -6,9 +6,7 @@ layout: default
 
 
 <div class="row">
-
-    <div class="col print-side">
-        
+    <div class="col-2 print-side">
     </div>
 
     
@@ -19,16 +17,16 @@ layout: default
     {{ content }}
     </div>
 
+    
     <div class="d-none d-lg-block col fixed-sidebar print-side">
         {% if toc.size > 1 %}
         <div class="d-print-none toc"> 
-        <h4>Contents</h4>  
-        {{ toc }}
-        
-            </div>
-            {% endif %}
-        
+            <h4>Contents</h4>  
+            {{ toc }}
+        </div>
+        {% endif %}
     </div>
+    
 
     <!-- <div class="d-none d-sm-block mt-4  col fixed-sidebar">
     
